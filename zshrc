@@ -70,3 +70,7 @@ export EDITOR=code
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
 sudo /etc/init.d/postgresql start
+
+# fnm
+export PATH="/home/deco89/.local/share/fnm:$PATH"
+eval "`fnm env`"
