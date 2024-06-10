@@ -79,3 +79,10 @@ export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 export GH_BROWSER="'/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'"
 export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 export GH_BROWSER="'/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'"
+
+# fnm
+FNM_PATH="/home/andrev/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/andrev/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
